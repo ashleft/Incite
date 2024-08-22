@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en"><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js" id="eppiocemhmnlbhjplcgkofciiegomcon"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy</title>
+  <meta name="description" content="Incite bot's legal Terms of Services.">
+  <link rel="icon" href="/img/incite-removebg.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-abc123..." crossorigin="anonymous" />
+  <style>
+    body {
+      font-family: 'Josefin Sans', sans-serif;
+      scrollbar-width: thin;
+      scrollbar-color: white black;
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+    }
+
+    body::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    body::-webkit-scrollbar-track {
+      background-color: #101010;
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background-color: black;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .headingp h1 {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .headingp p {
+      margin-bottom: 35px;
+      text-align: justify;
+    }
+
+    .headingp h2 {
+      margin-top: 20px;
+    }
+
+
+    h1::before {
+      content: "\f013";
+      font-family: "Font Awesome 5 Free";
+      margin-right: 10px;
+    }
+
+    h2 {
+      background: linear-gradient(to right, white 50%, white 50%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    h2::before {
+      content: "\f05a";
+      font-family: "Font Awesome 5 Free";
+      margin-right: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #337ab7;
+      text-decoration: none;
+    }
+
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9999;
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .loading.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .loading.hidden:before {
+      content: '';
+      position: absolute;
+      top: calc(50% - 40px);
+      left: calc(50% - 40px);
+      width: 80px;
+      height: 80px;
+      border: 4px solid #333;
+      border-top: 4px solid #61dafb;
+      border-radius: 50%;
+      animation: spin 2s linear infinite, fadeOut 0.5s ease-in-out 1s forwards;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    button {
+      background-color: #FFFFFF;
+      color: black;
+      text-decoration: none;
+      border: 2px solid transparent;
+      font-weight: bold;
+      padding: 13px 30px;
+      border-radius: 30px;
+      transition: .4s;
+    }
+
+    button:hover {
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      cursor: pointer;
+    }
+
+    button i {
+      margin-right: 5px;
+    }
+
+    .button-label {
+      margin-left: 5px;
+    }
+
+    div {
+      margin-bottom: 60px;
+    }
+
+
+    .back-button::before {
+      content: "\f060";
+      font-family: "Font Awesome 5 Free";
+      margin-right: 5px;
+    }
+
+    .back-button:hover::before {
+      animation: rotate 0.5s linear infinite;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(function () {
+        var loader = document.getElementById("loader");
+        loader.className += " hidden";
+      }, 2000);
+    });
+  </script>
+</head>
+
+<body>
+  <div id="loader" class="loading hidden"></div>
+  <div class="container">
+
+    <div class="headingp">
+
+      <h1>Privacy Policy</h1>
+      <p>
+        The use of this application ("Incite") in a server requires the collection of some specific user data ("Data").
+        The data collected includes, but is not limited to Discord user ID values.
+        Use of the Bot is considered an agreement to the terms of this Policy.
+      </p>
+
+    </div>
+
+      <h2><i class="fas fa-user-lock"> </i> Access to Data</h2>
+
+    <p>Access to Data is only permitted to Bot's developers, and only in the scope required for the development,
+      testing, and implementation of features for Bot. Data is not sold, provided to, or shared with any third party,
+      except where required by law or a Terms of Service agreement. You can view the data upon requesting in <a href="https://discord.gg/encoders" target="_blank">Encoders.</a>.
+    </p>
+
+    <h2><i class="fas fa-database"> </i> Storage of Data</h2>
+    <p>Data is stored in a Sqlite database. The database is secured to prevent external access, however no guarantee is
+      provided and the Bot owners assume no liability for the unintentional or malicious breach of Data. In the event of
+      an unauthorized Data access, users will be notified through the Discord client application.</p>
+
+    <h2><i class="fas fa-user"> </i> User Rights</h2>
+    <p>At any time, you have the right to request to view the Data pertaining to your Discord account. You may submit a
+      request through <a href="https://discord.gg/encoders" target="_top">Our Discord: Encoders</a>. You have
+      the right to request the
+      removal of relevant Data.</p>
+
+    <h2><i class="fas fa-child"> </i> Underage Users</h2>
+    <p>The use of the Bot is not permitted for minors under the age of 13, or under the age of legal consent for their
+      country. This is in compliance with the <a href="https://discord.com/terms">Discord Terms of Service</a>. No
+      information will be knowingly stored from an underage user. If it is found out that a user is underage we will
+      take all necessary action to delete the stored data.</p>
+
+    <h2><i class="fas fa-question"> </i> Questions</h2>
+    <p>If you have any questions or are concerned about what data might be being stored from your account contact
+      <a href="https://discord.gg/encoders" target="_blank">@ash3r</a>. For more information check the <a href="https://discord.com/terms">Discord Terms Of
+        Service</a>.
+    </p>
+
+
+    <div>
+
+    </div>
+
+
+    <a href="https://incitebot.pro/"><button id="back-btn">Back</button></a>
+
+  </div>
+
+  <script>
+    if (location.pathname.endsWith(".html")) {
+      const newPath = location.pathname.replace(".html", "");
+      history.replaceState({}, "", newPath);
+    }
+  </script>
+
+
+<div id="extension-mmplj"></div></body></html>
